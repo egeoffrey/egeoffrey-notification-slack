@@ -1,0 +1,11 @@
+package: myhouse-notification-slack
+release: 1
+version: development
+git: myhouse-project/myhouse-notification-slack
+modules:
+  - notification/slack
+default_config:
+  - notification/slack:
+      bot_name: "housebot"
+      bot_token: 
+      channel: "channel"
