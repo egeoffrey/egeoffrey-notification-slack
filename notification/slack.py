@@ -13,9 +13,9 @@
 
 from slackclient import SlackClient
 
-from sdk.module.notification import Notification
+from sdk.python.module.notification import Notification
 
-import sdk.utils.exceptions as exception
+import sdk.python.utils.exceptions as exception
 
 class Slack(Notification):
     # What to do when initializing
