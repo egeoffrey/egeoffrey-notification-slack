@@ -1,6 +1,9 @@
 package: myhouse-notification-slack
 revision: 2
 version: development
-git: myhouse-project/myhouse-notification-slack
+github: myhouse-project/myhouse-notification-slack
+dockerhub: myhouse-project/myhouse-notification-slack
+description: Send a notification through slack
+tags: notification slack
 modules:
   - notification/slack
