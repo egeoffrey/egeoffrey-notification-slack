@@ -95,6 +95,6 @@ class Slack(Notification):
      # What to do when receiving a new/updated configuration for this module    
     def on_configuration(self, message):
         # module's configuration
-        if message.args == self.fullname:
-            if not self.is_valid_module_configuration(["bot_token", "bot_name", "channel"], message.get_data()): return False
+        if message.args == self.fullname and not message.is_null:
+            if not self.is_valid_configuration(["bot_token", "bot_name", "channel"], message.get_data()): return False
             self.config = message.get_data()
